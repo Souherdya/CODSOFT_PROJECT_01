@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.landing-container{
+  height: 90vh;
+  width: 90%;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("steering.jpg");
+  border-radius: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5%;
+  top: 5vh;
+}
+.landing-container h1{
+  color: white;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 4rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App .header {
+  background-color: bisque;
+  height: 100vh;
+}
+.signup{
+  position:absolute;
+  bottom: 20%;
+  left: 15%;
+  width: 10%;
+  height: 5%;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: auto;
+  margin: 0%;
+ 
+}
+.signin{
+  position:absolute;
+  bottom: 20%;
+  left: 35%;
+  width: 10%;
+  height: 5%;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: auto;
+  margin: 0%;
+}
+.App-link {
+  color: #61dafb;
+}
+link{
+  padding: 5px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

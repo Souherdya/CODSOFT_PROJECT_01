@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kameron:wght@400..700&display=swap');
+
+*{
+    font-family: Kameron;
+}
+.App{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.Container{
+    position: relative;
+    left: 0%;
+    height: 70vh;
+    width: 1300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,3fr);
+    padding-top: 8%;
+    padding-bottom: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0px 0px 0px 5px black;
+}
+.resUpload{
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+
+}
+.grid-box5 p{
+    position: absolute;
+    width: 50%;
+    top: 82%;
+    left: 17%;
+
+}
+.proficon{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 2.5rem;
+}
+.Container h1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 2rem;
+}
+.grid-box1{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    border-right: 2px solid grey;
+    border-top: 2px solid grey;
+}
+.grid-box2{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    border-top: 2px solid grey;
+}
+.grid-box3{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    border-right: 2px solid grey;
+}
+.grid-box4{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+}
+.grid-box5{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    border-right: 2px solid grey;
+}
+.grid-box6{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+}
+
+.pfpForAccount{
+    position: relative;
+    height: 60%;
+    width: 18%;
+    left: 13%;
+    top: 15%;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: rgba(217, 217, 217, 1);
+    overflow: hidden;
+
+}
+.Candidate-name{
+    position: absolute;
+    width: 35%;
+    padding: 10px;
+    right: 20%;
+    top: 25%;
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+}
+.Candidate-bio{
+    position: absolute;
+    width: 35%;
+    padding: 10px;
+    right: 20%;
+    top: 55%;
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+}
+.grid-box2 h2{
+    font-size: large;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-bottom: 1px solid grey;
+}
+.grid-box4 h2{
+    font-size: large;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-bottom: 1px solid grey;
+}
+.grid-box6 h2{
+    font-size: large;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-bottom: 1px solid grey;
+}
+.grid-box3 h2{
+    font-size: large;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-bottom: 1px solid grey;
+}
+.grid-box5 h2{
+    font-size: large;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-bottom: 1px solid grey;
+}
+.Candidate-email{
+    position: absolute;
+    width: 80%;
+    top: 25%;
+    left: 7%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+}
+.Candidate-no{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 7%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+
+}
+.Candidate-location{
+    position: absolute;
+    width: 80%;
+    top: 75%;
+    left: 7%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+
+}
+.resumePic{
+    position: absolute;
+    left: 35%;
+    top: 82%;
+    color: transparent;
+}
+.uploadFileForpfp{
+    position: absolute;
+    left: 16%;
+    top: 80%;
+    color: transparent;
+}
+.submitAccountDetails{
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: 10%;
+    bottom: -15%;
+    padding: 15px;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.submitAccountDetails:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.imgForpfp{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}

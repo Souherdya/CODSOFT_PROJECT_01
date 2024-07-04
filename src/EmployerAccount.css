@@ -1,0 +1,150 @@
+
+.ppp{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+.container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width:100%;
+   
+    
+}
+.T{
+    position: absolute;
+    left: 19%;
+    top: 60%;
+    border-radius: 30px;
+    color: #ccc;
+    font-size: larger;
+    font-weight: 700;
+    font-family: Kameron;
+    cursor: pointer;
+    height: 7vh;
+    width: 9%;
+    background-color: black;
+}
+.profilePic{
+    border-radius: 40px;
+    position: absolute;
+    height: 40vh;
+    width: 20%;
+    background-color: rgb(187, 192, 192);
+    left: 13%;
+    top: 15vh;
+}
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: relative;
+    left: 18%;
+    top: 16%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #fafafa;
+    border-radius: 50%;
+}
+
+.info {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 35%;
+    height: 70vh;
+    right: 30%;
+    top: 15vh;
+    background-color: rgba(203, 202, 199, 0.918);
+    backdrop-filter: blur(5px);
+    overflow-y: scroll;
+    
+}
+.conInf{
+    margin-bottom: 5px;
+    font-weight: 600;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: larger;
+    font-family: Kameron;
+}
+.socInf{
+    margin-bottom: 5px;
+    font-weight: 600;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: larger;
+    font-family: Kameron;
+}
+.picture{
+    position: relative;
+    top: 20%;
+    left: 38%;
+    color: transparent;
+    z-index: 1;
+}
+.comInf{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    padding: 5px;
+    font-size: larger;
+    font-family: Kameron;
+}
+.contact-info, .company-info {
+    border-radius: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.contact-info{
+    position: relative;
+    top: 20%;
+}
+.company-info {
+    position: relative;
+    top: 20%;
+}
+.social-info {
+    border-radius: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+   top: 20%;
+}
+h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.wallpage-inp{
+    width: 90%;
+    position: relative;
+    left: 2%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login page pro 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+header{
+    height: 10vh;
+padding: 10px 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: absolute;
+top: 0;
+z-index: 1000;
+width: 100%;
+font-weight: 900;
+
+}
+   
+   
+    .logo{
+        cursor:pointer;
+        height: 70px;
+        margin-right: auto;
+        border-radius: 50%;
+        height: 100%;
+        margin-left: 10px;
+
+    }
+    ul{
+        list-style: none;
+        margin-right: 20px;
+        
+
+    }
+     .list-items{ margin-left: 5px;
+        font-size: 16px;
+    font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 25px;
+        transition: all 0.8s ease 0s;
+        text-transform: capitalize;
+        background-color: rgba(241, 241, 241, 0.799);
+        border-radius: 50px;
+        
+
+       
+    }
+    
+    li a:hover{
+        color:rgb(42, 144, 212);
+    }
+   .cta{
+       
+        padding: 21px 25px;
+        background-color: rgba(241, 241, 241, 0.813);
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.8s ease 0s;
+        margin: 0px 33px 0px 10px;
+        font-weight: 500;
+        text-transform: capitalize;
+
+    }
+    .cta:hover{
+        background-color: rgb(142, 142, 142,0.5);
+        color:rgb(42, 144, 212);
+    }
+
+ 
+    
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: "Roboto Slab", serif;
+    font-weight: 390;
+}
+body{
+    background-image: url("bgf.webp");
+    background-size: cover;
+    min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1{padding: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color:  rgb(79, 70, 70);;
+}
+.login-container{
+    height: 45vh;
+    width: 60vh;
+   background-color: transparent;
+   backdrop-filter: blur(4px);
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+}
+.input{ outline: none;
+    margin-top: 3vh ;
+    width: 90%;
+    padding: 1.5vh 1.5vh 1.5vh 3vh;
+    border-radius: 50px;
+    position: relative;
+    /* border: 2px solid white;
+    background: transparent;
+    backdrop-filter: blur(100px); */
+    background-color: rgba(241, 241, 241, 0.813);
+    border: none;
+   
+    font-size: 14px;
+    font-weight: 400;
+}
+i{
+    position: absolute;
+    right: 40px;
+    transform: translateY(163%);
+    font-size: 20px;
+}
+.b{margin: 2.5vh 0px 10px ; padding: 1.5vh;outline: none;border-radius: 50px;
+    border: none;
+    background-color: rgba(241, 241, 241, 0.813);
+
+    font-size: 15px;
+    font-weight: 450;
+    width: 100%;
+}
+.input::placeholder{
+    color: rgb(0, 0, 0);
+   
+}
+
+.rem{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.b:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
+a,p,.remme{
+    text-decoration: none; color: black;
+}
+label{
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" alt="logo " src="logo.jpg">
+        <nav>
+            <ul class="nav__links">
+                <li class="list-items"><a href="#services">Services</a></li>
+                <li class="list-items"><a href="#projects">projects</a></li>
+                <li class="list-items"><a href="#about">about</a></li>
+            </ul>
+        </nav>
+        <a href="#"><button class="cta">contact</button></a>
+    </header>
+
+    <div class="login-container">
+        <h1>Sign In</h1>
+        <input type="text" placeholder="Username" class="input "><i class='bx bxs-user'></i>
+        <input type="password" placeholder="Password" class="input "><i class='bx bxs-key'></i>
+        <div class="rem">
+            <div class="remme"><label><input type="checkbox">&nbsp;Remember me</label></div>
+            <div class="forgot"><a href="#">Forgot password?</a></div>
+            </div>
+        <button class="b">Login</button>
+        <p>Don't have an account? <a href="#">Register</a> </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            background-color: white;
+            width: 95%;
+            position: absolute;
+            left: 2.5%;
+            top: 5%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .left-panel, .right-panel {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .left-panel {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            padding: 10px;
+            border-radius: 30px;
+        }
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .right-panel {
+            width: 20%;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        .main-content {
+            height: 100vh;
+            flex: 1;
+            padding: 20px;
+            position: relative;
+            overflow-y: auto;
+        }
+        .search-bar {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            position: relative;
+            left: 3%;
+        }
+        .filter{
+            position: absolute;
+            left: 78%;
+            top: 3%;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            height: 15px;
+            width: 4%;
+        }
+        .job-card {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            position: relative;
+            width: 90%;
+            left: 3%;
+            height: 100px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .job-card .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-right: 15px;
+            position: relative;
+            left: 4%;
+        }
+        .job-card .L{
+            position: absolute;
+            top: 25%;
+            left: 16%;
+            font-size: small;
+            color: grey;
+        }
+        .job-card .job{
+            position: absolute;
+            top: 38%;
+            left: 16%;
+            font-weight: 500;
+        }
+        .job-card h1{
+            position: absolute;
+            top: 10%;
+            left: 16%;
+            font-size: larger;
+
+        }
+        .job-card .details {
+            flex: 1;
+        }
+        
+        .job-card .actions button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            border: none;
+            position: absolute;
+            right: 10%;
+            top: 65%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .job-card .actions .explore {
+            position: absolute;
+            right: 15%;
+            background-color: #007bff;
+            color: #fff;
+        }
+        .job-card .actions .apply {
+            padding-right: 20px;
+            position: absolute;
+            right: 5%;
+            background-color: #28a745;
+            color: #fff;
+        }
+        .notif{
+            position: relative;
+            width: 90%;
+            left: 5%;
+            height: auto;
+            background-color: white;
+            border-radius: 20px;
+            flex-wrap: wrap;
+
+        }
+        .right-panel h1{
+            padding: 10px;
+        }
+        
+        .notif p{
+            padding: 10px;
+            font-size: small;
+            font-weight: 700;
+            position: relative;
+            
+            text-wrap: wrap;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="profile-pic"></div>
+            <div class="designation">Designation</div>
+            <div class="name">Name</div>
+            <div class="education">Education</div>
+        </div>
+        <div class="main-content">
+            <input type="text" class="search-bar" placeholder="SEARCH...">\
+            <div class="filter"></div>
+
+            <div class="job-card">
+                <div class="logo"></div>
+                <div class="details">
+                    <h1>SouherdyaSarkar Inc.</h1>
+                    <p class="L">looking for...</p>
+                    <p class="job">Software developer with 2+ years experience</p>
+                </div>
+                <div class="actions">
+                    <button class="explore">Explore</button>
+                    <button class="apply">Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+           <h1>Notification           </h1>
+
+            <div class="notif">
+                <div class="logo"></div>
+                <p>SouherdyaSarkar Inc. Has accepted your application!</p>
+            </div>
+        </div>
+    </div>
+    <script src="JobCard.js"></script>
+</body>
+</html>
